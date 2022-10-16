@@ -4,11 +4,11 @@ const Document = () => (
   <Html>
     <Head>
       <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap"
         rel="stylesheet"
       />
     </Head>
-    <body className="bg-zinc-900 text-white font-dmsans">
+    <body className="bg-zinc-900 text-zinc-300 font-dmsans leading-relaxed">
       <Main />
       <NextScript />
     </body>
