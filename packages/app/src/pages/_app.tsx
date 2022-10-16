@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 
 import { EthereumProviders } from "../EthereumProviders";
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
@@ -21,4 +21,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default MyApp;
+export default App;
