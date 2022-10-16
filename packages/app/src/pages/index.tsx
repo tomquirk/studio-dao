@@ -6,7 +6,7 @@ const HomePage: NextPage = () => {
   return (
     <div className="min-h-screen">
       <div className="container mx-auto px-2 flex justify-between items-center py-8">
-        <a href="/">
+        <a href="#">
           <img src="/logo.svg" className="w-48" alt="StudioDAO logo" />
         </a>
         <nav>
@@ -14,7 +14,7 @@ const HomePage: NextPage = () => {
             <li>
               <a
                 href="#"
-                className="px-6 py-4 hover:underline hover:underline-offset-2"
+                className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
               >
                 Projects
               </a>
@@ -22,7 +22,7 @@ const HomePage: NextPage = () => {
             <li>
               <a
                 href="#"
-                className="px-6 py-4 hover:underline hover:underline-offset-2"
+                className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
               >
                 FAQ
               </a>
@@ -30,7 +30,7 @@ const HomePage: NextPage = () => {
             <li>
               <a
                 href="#"
-                className="px-6 py-4 hover:underline hover:underline-offset-2"
+                className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
               >
                 Twitter
               </a>
@@ -38,7 +38,7 @@ const HomePage: NextPage = () => {
             <li>
               <a
                 href="#"
-                className="px-6 py-4 hover:underline hover:underline-offset-2"
+                className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
               >
                 Discord
               </a>
@@ -187,16 +187,16 @@ const HomePage: NextPage = () => {
 
           <Button className="mx-auto">Learn more</Button>
         </div>
-        <div className="flex flex-col gap-6 items-center justify-center">
-          <a href="/">
+        <div className="flex flex-col gap-6 items-center justify-center divide-y divide-zinc-700">
+          <a href="#">
             <img src="/logo.svg" className="w-36" alt="StudioDAO logo" />
           </a>
-          <nav className="border-t border-zinc-700 py-4">
+          <nav>
             <ul className="flex">
               <li>
                 <a
                   href="#"
-                  className="px-6 py-4 hover:underline hover:underline-offset-2"
+                  className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
                 >
                   Projects
                 </a>
@@ -204,7 +204,7 @@ const HomePage: NextPage = () => {
               <li>
                 <a
                   href="#"
-                  className="px-6 py-4 hover:underline hover:underline-offset-2"
+                  className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
                 >
                   FAQ
                 </a>
@@ -212,7 +212,7 @@ const HomePage: NextPage = () => {
               <li>
                 <a
                   href="#"
-                  className="px-6 py-4 hover:underline hover:underline-offset-2"
+                  className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
                 >
                   Twitter
                 </a>
@@ -220,7 +220,7 @@ const HomePage: NextPage = () => {
               <li>
                 <a
                   href="#"
-                  className="px-6 py-4 hover:underline hover:underline-offset-2"
+                  className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
                 >
                   Discord
                 </a>
@@ -232,14 +232,25 @@ const HomePage: NextPage = () => {
       <div className="container mx-auto px-2 py-4 mt-16 flex justify-between text-zinc-600">
         <div className="flex gap-6">
           <span>© 2022 StudioDAO Backlot, LLC. All rights are reserved.</span>
-          <a href="#" className="hover:underline hover:underline-offset-2">
+          <a
+            href="https://www.studiodao.xyz/privacy-policy"
+            className="hover:underline hover:underline-offset-2"
+          >
             Privacy Policy
           </a>
-          <a href="#" className="hover:underline hover:underline-offset-2">
+          <a
+            href="https://www.studiodao.xyz/terms-of-use"
+            className="hover:underline hover:underline-offset-2"
+          >
             Terms of Use
           </a>
         </div>
-        <a href="#" className="hover:underline hover:underline-offset-2">
+        <a
+          href="https://juicebox.money/"
+          className="hover:underline hover:underline-offset-2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Built with Juicebox
         </a>
       </div>
