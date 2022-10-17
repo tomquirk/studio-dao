@@ -92,6 +92,7 @@ const HomePage: NextPage = () => {
             </div>
           </div>
         </div>
+
         <div className="max-w-5xl mx-auto px-2 space-y-16">
           <div className="max-w-xl mx-auto space-y-4 text-center">
             <h2 className="text-3xl font-dmserif text-white">
@@ -112,6 +113,7 @@ const HomePage: NextPage = () => {
             TODO
           </div>
         </div>
+
         <div className="max-w-5xl mx-auto px-2 space-y-16">
           <div className="max-w-xl mx-auto space-y-4 text-center">
             <h2 className="text-3xl font-dmserif text-white">
@@ -128,12 +130,88 @@ const HomePage: NextPage = () => {
               </a>
             </p>
           </div>
-          <div className="space-y-8">
-            <div className="p-16 border rounded-xl border-zinc-600 flex items-center justify-center">
-              TODO
+          <div className="space-y-12">
+            <div className="flex bg-black/20 rounded-lg overflow-hidden">
+              <img
+                src="/hero.png"
+                className="w-96 aspect-square object-cover"
+              />
+              <div className="flex-grow flex flex-col justify-between p-12 gap-8">
+                <div className="space-y-4">
+                  <h5 className="font-dmserif text-3xl">
+                    Unlikely Love Stories: Tender Vittles
+                  </h5>
+                  <p className="text-zinc-500">By Rosa Tran & Derek Smith</p>
+                  <p>
+                    From the artists and minds behind Robot Chicken, Anomalisa
+                    and Final Space comes a slightly fucked-up, adorably twisted
+                    take on love. Unlikely Love Stories is a darkly-comedic
+                    animated anthology that explores the highest highs – and
+                    very low lows – of unexpected love in the most unexpected
+                    places.
+                  </p>
+                </div>
+                <div className="flex justify-between">
+                  <Button size="sm">Contribute</Button>
+                  <Button size="sm" variant="secondary">
+                    Learn more
+                  </Button>
+                </div>
+              </div>
             </div>
-            <Button className="mx-auto">View all projects</Button>
+            <div className="flex bg-black/20 rounded-lg overflow-hidden">
+              <img
+                src="/hero.png"
+                className="w-96 aspect-square object-cover"
+              />
+              <div className="flex-grow flex flex-col justify-between p-12 gap-8">
+                <div className="space-y-4">
+                  <h5 className="font-dmserif text-3xl">Beam-Eyed Colossi</h5>
+                  <p className="text-zinc-500">By Rosa Tran & Derek Smith</p>
+                  <p>
+                    From the artists and minds behind Robot Chicken, Anomalisa
+                    and Final Space comes a slightly fucked-up, adorably twisted
+                    take on love. Unlikely Love Stories is a darkly-comedic
+                    animated anthology that explores the highest highs – and
+                    very low lows – of unexpected love in the most unexpected
+                    places.
+                  </p>
+                </div>
+                <div className="flex justify-between">
+                  <Button size="sm">Contribute</Button>
+                  <Button size="sm" variant="secondary">
+                    Learn more
+                  </Button>
+                </div>
+              </div>
+            </div>
+            <div className="flex bg-black/20 rounded-lg overflow-hidden">
+              <img
+                src="/hero.png"
+                className="w-96 aspect-square object-cover"
+              />
+              <div className="flex-grow flex flex-col justify-between p-12 gap-8">
+                <div className="space-y-4">
+                  <h5 className="font-dmserif text-3xl">Dickson Greeting</h5>
+                  <p className="text-zinc-500">By William K. L. Dickson</p>
+                  <p>
+                    Experimental film fragment made with the
+                    Edison-Dickson-Heise experimental horizontal-feed
+                    kinetograph camera and viewer, using 3/4-inch wide film.
+                  </p>
+                </div>
+                <div className="flex justify-between">
+                  <Button size="sm">Contribute</Button>
+                  <Button size="sm" variant="secondary">
+                    Learn more
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
+          <Button className="mx-auto" variant="secondary">
+            View all projects
+          </Button>
         </div>
 
         <div className="max-w-5xl mx-auto px-2 space-y-12">
@@ -184,9 +262,9 @@ const HomePage: NextPage = () => {
               </p>
             </div>
           </div>
-
           <Button className="mx-auto">Learn more</Button>
         </div>
+
         <div className="flex flex-col gap-6 items-center justify-center divide-y divide-zinc-700">
           <a href="#">
             <img src="/logo.svg" className="w-36" alt="StudioDAO logo" />
