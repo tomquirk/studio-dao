@@ -5,16 +5,17 @@ import { Button } from "../Button";
 const HomePage: NextPage = () => {
   return (
     <div className="min-h-screen">
-      <div className="container mx-auto px-2 flex justify-between items-center py-8">
-        <a href="#">
+      <div className="max-w-5xl mx-auto px-6 flex justify-between items-center gap-6 py-8">
+        <a href="#" className="flex-shrink-0">
           <img src="/logo.svg" className="w-48" alt="StudioDAO logo" />
         </a>
-        <nav>
+        {/* TODO: mobile nav */}
+        <nav className="hidden md:block">
           <ul className="flex">
             <li>
               <a
                 href="#"
-                className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
+                className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
               >
                 Projects
               </a>
@@ -22,7 +23,7 @@ const HomePage: NextPage = () => {
             <li>
               <a
                 href="#"
-                className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
+                className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
               >
                 FAQ
               </a>
@@ -30,7 +31,7 @@ const HomePage: NextPage = () => {
             <li>
               <a
                 href="#"
-                className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
+                className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
               >
                 Twitter
               </a>
@@ -38,7 +39,7 @@ const HomePage: NextPage = () => {
             <li>
               <a
                 href="#"
-                className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
+                className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
               >
                 Discord
               </a>
@@ -47,20 +48,20 @@ const HomePage: NextPage = () => {
         </nav>
         <Button size="sm">Connect</Button>
       </div>
-      <div className="space-y-48">
+      <div className="space-y-32 sm:space-y-48">
         <div
-          className="min-h-[640px] bg-center bg-cover bg-no-repeat flex flex-col"
-          style={{ backgroundImage: "url(/hero.png)" }}
+          className="md:min-h-[480px] lg:min-h-[640px] bg-center bg-cover bg-no-repeat flex flex-col"
+          style={{ backgroundImage: "url('/hero.png')" }}
         >
-          <div className="bg-zinc-800/80">
-            <div className="container mx-auto px-2 flex justify-between py-4">
+          <div className="bg-zinc-800/90">
+            <div className="max-w-5xl mx-auto px-6 flex justify-between py-4">
               <div>Current treasury cycle</div>
-              <div>Earn Green-light Power</div>
+              <div className="hidden sm:block">Earn Green-light Power</div>
             </div>
           </div>
           <div className="flex-grow flex flex-col justify-end items-center relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-zinc-900" />
-            <div className="relative max-w-5xl px-2 flex justify-center items-end gap-24 pb-16 -mb-16">
+            <div className="absolute inset-0 bg-gradient-to-b from-zinc-800/70 to-zinc-900 md:from-transparent md:to-zinc-900" />
+            <div className="relative max-w-5xl px-6 flex flex-col md:flex-row md:justify-center md:items-end gap-12 md:gap-24 py-12 -mb-16">
               <div className="space-y-4">
                 <h1 className="text-6xl font-dmserif text-white">
                   Owned by <span className="text-emerald-500">filmmakers</span>.
@@ -93,7 +94,7 @@ const HomePage: NextPage = () => {
           </div>
         </div>
 
-        <div className="max-w-5xl mx-auto px-2 space-y-16">
+        <div className="max-w-5xl mx-auto px-6 space-y-16">
           <div className="max-w-xl mx-auto space-y-4 text-center">
             <h2 className="text-3xl font-dmserif text-white">
               Today’s Green-light vote
@@ -114,7 +115,7 @@ const HomePage: NextPage = () => {
           </div>
         </div>
 
-        <div className="max-w-5xl mx-auto px-2 space-y-16">
+        <div className="max-w-5xl mx-auto px-6 space-y-16">
           <div className="max-w-xl mx-auto space-y-4 text-center">
             <h2 className="text-3xl font-dmserif text-white">
               StudioDAO Box Office
@@ -130,13 +131,13 @@ const HomePage: NextPage = () => {
               </a>
             </p>
           </div>
-          <div className="space-y-12">
-            <div className="flex bg-black/20 rounded-lg overflow-hidden">
+          <div className="space-y-8 sm:space-y-12">
+            <div className="flex flex-col md:flex-row bg-black/20 rounded-lg overflow-hidden">
               <img
                 src="/hero.png"
-                className="w-96 aspect-square object-cover"
+                className="flex-shrink-0 md:w-72 lg:w-96 h-56 md:h-auto aspect-square object-cover"
               />
-              <div className="flex-grow flex flex-col justify-between p-12 gap-8">
+              <div className="flex-grow flex flex-col justify-between p-8 md:p-12 gap-8">
                 <div className="space-y-4">
                   <h5 className="font-dmserif text-3xl">
                     Unlikely Love Stories: Tender Vittles
@@ -159,14 +160,16 @@ const HomePage: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex bg-black/20 rounded-lg overflow-hidden">
+            <div className="flex flex-col md:flex-row bg-black/20 rounded-lg overflow-hidden">
               <img
                 src="/hero.png"
-                className="w-96 aspect-square object-cover"
+                className="flex-shrink-0 md:w-72 lg:w-96 h-56 md:h-auto aspect-square object-cover"
               />
-              <div className="flex-grow flex flex-col justify-between p-12 gap-8">
+              <div className="flex-grow flex flex-col justify-between p-8 md:p-12 gap-8">
                 <div className="space-y-4">
-                  <h5 className="font-dmserif text-3xl">Beam-Eyed Colossi</h5>
+                  <h5 className="font-dmserif text-3xl">
+                    Unlikely Love Stories: Tender Vittles
+                  </h5>
                   <p className="text-zinc-500">By Rosa Tran & Derek Smith</p>
                   <p>
                     From the artists and minds behind Robot Chicken, Anomalisa
@@ -185,19 +188,24 @@ const HomePage: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex bg-black/20 rounded-lg overflow-hidden">
+            <div className="flex flex-col md:flex-row bg-black/20 rounded-lg overflow-hidden">
               <img
                 src="/hero.png"
-                className="w-96 aspect-square object-cover"
+                className="flex-shrink-0 md:w-72 lg:w-96 h-56 md:h-auto aspect-square object-cover"
               />
-              <div className="flex-grow flex flex-col justify-between p-12 gap-8">
+              <div className="flex-grow flex flex-col justify-between p-8 md:p-12 gap-8">
                 <div className="space-y-4">
-                  <h5 className="font-dmserif text-3xl">Dickson Greeting</h5>
-                  <p className="text-zinc-500">By William K. L. Dickson</p>
+                  <h5 className="font-dmserif text-3xl">
+                    Unlikely Love Stories: Tender Vittles
+                  </h5>
+                  <p className="text-zinc-500">By Rosa Tran & Derek Smith</p>
                   <p>
-                    Experimental film fragment made with the
-                    Edison-Dickson-Heise experimental horizontal-feed
-                    kinetograph camera and viewer, using 3/4-inch wide film.
+                    From the artists and minds behind Robot Chicken, Anomalisa
+                    and Final Space comes a slightly fucked-up, adorably twisted
+                    take on love. Unlikely Love Stories is a darkly-comedic
+                    animated anthology that explores the highest highs – and
+                    very low lows – of unexpected love in the most unexpected
+                    places.
                   </p>
                 </div>
                 <div className="flex justify-between">
@@ -214,13 +222,13 @@ const HomePage: NextPage = () => {
           </Button>
         </div>
 
-        <div className="max-w-5xl mx-auto px-2 space-y-12">
+        <div className="max-w-5xl mx-auto px-6 space-y-12">
           <div className="max-w-xl mx-auto space-y-4 text-center">
             <h2 className="text-3xl font-dmserif text-white">
               Frequently Asked Questions
             </h2>
           </div>
-          <div className="grid grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-2">
               <h4 className="text-xl font-medium text-white">
                 How do I green-light a film?
@@ -274,7 +282,7 @@ const HomePage: NextPage = () => {
               <li>
                 <a
                   href="#"
-                  className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
+                  className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
                 >
                   Projects
                 </a>
@@ -282,7 +290,7 @@ const HomePage: NextPage = () => {
               <li>
                 <a
                   href="#"
-                  className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
+                  className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
                 >
                   FAQ
                 </a>
@@ -290,7 +298,7 @@ const HomePage: NextPage = () => {
               <li>
                 <a
                   href="#"
-                  className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
+                  className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
                 >
                   Twitter
                 </a>
@@ -298,7 +306,7 @@ const HomePage: NextPage = () => {
               <li>
                 <a
                   href="#"
-                  className="inline-flex px-6 py-4 hover:underline hover:underline-offset-2"
+                  className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
                 >
                   Discord
                 </a>
@@ -307,9 +315,17 @@ const HomePage: NextPage = () => {
           </nav>
         </div>
       </div>
-      <div className="container mx-auto px-2 py-4 mt-16 flex justify-between text-zinc-600">
-        <div className="flex gap-6">
-          <span>© 2022 StudioDAO Backlot, LLC. All rights are reserved.</span>
+      <div className="px-6 py-4 mt-16 flex flex-col lg:flex-row gap-x-6 gap-y-8 justify-between text-zinc-600">
+        <a
+          href="https://juicebox.money/"
+          className="hover:underline hover:underline-offset-2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Runs with Juicebox, secured by Ethereum
+        </a>
+        <div className="flex flex-col md:flex-row gap-x-6">
+          <span>© 2022 StudioDAO Backlot, LLC.</span>
           <a
             href="https://www.studiodao.xyz/privacy-policy"
             className="hover:underline hover:underline-offset-2"
@@ -323,14 +339,6 @@ const HomePage: NextPage = () => {
             Terms of Use
           </a>
         </div>
-        <a
-          href="https://juicebox.money/"
-          className="hover:underline hover:underline-offset-2"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Built with Juicebox
-        </a>
       </div>
     </div>
   );

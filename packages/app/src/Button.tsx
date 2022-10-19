@@ -8,7 +8,7 @@ type ButtonVariant = "primary" | "secondary";
 
 const buttonClasses = (size: ButtonSize, variant: ButtonVariant) => {
   const sizeClassNames: Record<ButtonSize, string> = {
-    sm: "px-4 py-2",
+    sm: "px-3 py-1 md:px-4 md:py-2",
     md: "px-6 py-3",
   };
   const variantClassNames: Record<ButtonVariant, string> = {
