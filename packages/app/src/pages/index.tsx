@@ -5,49 +5,55 @@ import { Button } from "../Button";
 const HomePage: NextPage = () => {
   return (
     <div className="min-h-screen">
-      <div className="max-w-5xl mx-auto px-6 flex justify-between items-center gap-6 py-8">
-        <a href="#" className="flex-shrink-0">
-          <img src="/logo.svg" className="w-48" alt="StudioDAO logo" />
-        </a>
-        {/* TODO: mobile nav */}
-        <nav className="hidden md:block">
-          <ul className="flex">
-            <li>
-              <a
-                href="#"
-                className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
-              >
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
-              >
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="inline-flex px-4 sm:px-6 py-4 hover:underline hover:underline-offset-2"
-              >
-                Discord
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <Button size="sm">Connect</Button>
+      <div className="max-w-5xl mx-auto px-6 flex flex-col relative py-8">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+          <div className="flex-grow flex flex-col md:flex-row md:items-center gap-2">
+            <a href="#" className="flex-shrink-0">
+              <img src="/logo.svg" className="w-48" alt="StudioDAO logo" />
+            </a>
+            <nav className="flex-grow md:flex md:items-center md:justify-center">
+              <ul className="flex -m-3">
+                <li>
+                  <a
+                    href="#"
+                    className="inline-flex px-3 py-2 hover:underline hover:underline-offset-2"
+                  >
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="inline-flex px-3 py-2 hover:underline hover:underline-offset-2"
+                  >
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="inline-flex px-3 py-2 hover:underline hover:underline-offset-2"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="inline-flex px-3 py-2 hover:underline hover:underline-offset-2"
+                  >
+                    Discord
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <Button size="sm" className="self-start sm:self-auto">
+            Connect
+          </Button>
+        </div>
       </div>
+
       <div className="space-y-32 sm:space-y-48">
         <div
           className="md:min-h-[480px] lg:min-h-[640px] bg-center bg-cover bg-no-repeat flex flex-col"
