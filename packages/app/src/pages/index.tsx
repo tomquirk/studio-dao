@@ -1,3 +1,4 @@
+import { ConnectKitButton } from "connectkit";
 import type { NextPage } from "next";
 
 import { Button } from "../Button";
@@ -48,9 +49,19 @@ const HomePage: NextPage = () => {
               </ul>
             </nav>
           </div>
-          <Button size="sm" className="self-start sm:self-auto">
-            Connect
-          </Button>
+          <ConnectKitButton.Custom>
+            {({ isConnected, isConnecting, show, address, ensName }) => (
+              <Button
+                size="sm"
+                variant={isConnected ? "secondary" : "primary"}
+                className="self-start sm:self-auto"
+                onClick={show}
+                pending={isConnecting}
+              >
+                {isConnected ? ensName || address : "Connect"}
+              </Button>
+            )}
+          </ConnectKitButton.Custom>
         </div>
       </div>
 
