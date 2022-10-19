@@ -21,6 +21,6 @@ export const wagmiClient = createClient(
 
 export const EthereumProviders: React.FC = ({ children }) => (
   <WagmiConfig client={wagmiClient}>
-    <ConnectKitProvider>{children}</ConnectKitProvider>
+    <ConnectKitProvider theme="midnight">{children}</ConnectKitProvider>
   </WagmiConfig>
 );
