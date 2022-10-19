@@ -11,7 +11,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>Example NFT</title>
+        <title>StudioDAO</title>
       </Head>
       <EthereumProviders>
         <Component {...pageProps} />
