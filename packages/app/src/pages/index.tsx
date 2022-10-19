@@ -54,11 +54,13 @@ const HomePage: NextPage = () => {
               <Button
                 size="sm"
                 variant={isConnected ? "secondary" : "primary"}
-                className="self-start sm:self-auto"
+                className="self-start sm:self-auto max-w-[9rem]"
                 onClick={show}
                 pending={isConnecting}
               >
-                {isConnected ? ensName || address : "Connect"}
+                <span className="flex-grow min-w-0 overflow-hidden text-ellipsis">
+                  {isConnected ? ensName || address : "Connect"}
+                </span>
               </Button>
             )}
           </ConnectKitButton.Custom>
